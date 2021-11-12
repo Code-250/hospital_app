@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QouraMobileApp">
         <activity
+            android:name="com.example.hospital_management_system_app.PatientRegistrationActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.hospital_management_system_app.RegisterActivity"
             android:exported="false" />
         <activity
