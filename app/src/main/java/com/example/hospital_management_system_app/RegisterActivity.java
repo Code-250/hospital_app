@@ -9,22 +9,20 @@ import android.widget.TextView;
 
 import com.example.qouramobileapp.R;
 
-public class LoginActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
 
-    private TextView loginPageQuestion;
-
+    private TextView back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_register);
 
-        loginPageQuestion = findViewById(R.id.loginPageQuestion);
-        
-        loginPageQuestion.setOnClickListener(new View.OnClickListener() {
+        back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                Intent intent  = new Intent(RegisterActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
