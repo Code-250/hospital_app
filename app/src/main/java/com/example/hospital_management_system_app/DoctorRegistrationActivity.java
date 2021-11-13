@@ -9,20 +9,20 @@ import android.widget.TextView;
 
 import com.example.qouramobileapp.R;
 
-public class PatientRegistrationActivity extends AppCompatActivity {
+public class DoctorRegistrationActivity extends AppCompatActivity {
 
-    private TextView regPatientQuestion;
+    private TextView regDocQuestion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_patient_registration);
+        setContentView(R.layout.activity_doctor_registration);
 
-        regPatientQuestion = findViewById(R.id.regPatientQuestion);
-        regPatientQuestion.setOnClickListener(new View.OnClickListener() {
+        regDocQuestion = findViewById(R.id.regDocQuestion);
+        regDocQuestion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PatientRegistrationActivity.this, RegisterActivity.class);
+                Intent intent = new Intent(DoctorRegistrationActivity.this, RegisterActivity.class);
                 startActivity(intent);
             }
         });

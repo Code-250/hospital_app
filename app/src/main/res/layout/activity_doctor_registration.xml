@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.hospital_management_system_app.PatientRegistrationActivity">
+    tools:context="com.example.hospital_management_system_app.DoctorRegistrationActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,11 +13,11 @@
         android:layout_margin="10dp"
         >
         <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:id="@+id/logo"
-        android:src="@drawable/doctor"
-        android:layout_gravity="center"/>
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/logo"
+            android:src="@drawable/doctor"
+            android:layout_gravity="center"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -28,7 +28,7 @@
             android:textSize="25sp"
             android:textColor="#000000"
             android:gravity="center"/>
-        
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profileImage"
             app:civ_border_width="20dp"
@@ -60,9 +60,6 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-
-
-
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -84,6 +81,42 @@
                 android:textColor="#000"/>
 
         </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/availabilitySpinner"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:popupBackground="#fff"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/timeframes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/departmentSpinner"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:popupBackground="#fff"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/specializationSpinner"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:popupBackground="#fff"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/Specialization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -156,7 +189,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/regButton"
+            android:id="@+id/regDocButton"
             android:text="Register"
             android:textAllCaps="false"
             android:layout_marginTop="10dp"
@@ -168,7 +201,7 @@
             android:background="@drawable/buttons_background"/>
 
         <TextView
-            android:id="@+id/regPatientQuestion"
+            android:id="@+id/regDocQuestion"
             android:text="Already have an account? Login"
             android:textAllCaps="false"
             android:textSize="17sp"

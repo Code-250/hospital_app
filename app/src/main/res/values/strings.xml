@@ -1,3 +1,31 @@
 <resources>
-    <string name="app_name">qoura mobile app</string>
+    <string name="app_name">Hospital Management System mobile app</string>
+    <string name="welcome_to_this_application">Welcome to this application</string>
+
+    <string-array name="timeframes">
+        <item>Select time you are available</item>
+        <item>7AM-9AM</item>
+        <item>8AM-10AM</item>
+        <item>9AM-11AM</item>
+        <item>10AM-12PM</item>
+        <item>11AM-13PM</item>
+        <item>12PM-14PM</item>
+        <item>13PM-15PM</item>
+        <item>14PM-16PM</item>
+        <item>15PM-17PM</item>
+    </string-array>
+
+    <string-array name="department">
+        <item>Select your department</item>
+        <item>Dentist</item>
+        <item>Surgery</item>
+        <item>Genecology</item>
+    </string-array>
+
+    <string-array name="Specialization">
+        <item>Select your Specialization</item>
+        <item>General</item>
+        <item>Pediatly</item>
+        <item>periodentist</item>
+    </string-array>
 </resources>
